@@ -13,6 +13,13 @@ package com.sort;
  */
 public class SortByParity 
 {
+	/**
+	 * 
+	 * <p>Title: SortArrayByParityII</p>  
+	 * <p>Description:一种方法 </p>  
+	 * @param 起始数组A
+	 * @return 排序后数组A
+	 */
 	public static int [] SortArrayByParityII(int []A)
 	{
 		int []odd=new int[A.length /2];
@@ -41,7 +48,30 @@ public class SortByParity
 				A[index]=odd[odd_index_result++];
 			}
 		}
-
+		return A;
+	}
+	/**
+	 * 
+	 * <p>Title: SortArrayByParity</p>  
+	 * <p>Description: 另一种方法</p>  
+	 * @param 起始数组A
+	 * @return 排序后数组A
+	 */
+	public static int [] SortArrayByParity(int []A)
+	{
+		int index_odd=1;
+		for(int index_even=0;index_even<A.length-1;index_even+=2)
+		{
+			if(A[index_even]%2!=0)
+			{
+				while(A[index_odd]%2!=0) {
+					index_odd+=2;
+				}
+				int temp=A[index_even];
+				A[index_even]=A[index_odd];
+				A[index_odd]=temp;
+			}				
+		}
 		return A;
 	}
 
@@ -49,14 +79,11 @@ public class SortByParity
 	{
 		// TODO Auto-generated method stub
 		int []A= {4,2,5,7};
-		int []result=SortArrayByParityII(A);
+//		int []result=SortArrayByParityII(A);
+		int []result=SortArrayByParity(A);
 		for(int i=0;i<result.length;i++)
 		{
 			System.out.print(result[i]+",");
 		}
-		
-		
-
 	}
-
 }
