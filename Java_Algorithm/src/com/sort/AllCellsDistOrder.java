@@ -12,6 +12,7 @@ import java.util.Comparator;
  * <p>analyze：  </p>  
  * @date 2019年5月13日  
  */
+//测试一下ssh是否有用，自动忽略
 class Point
 {
 	public int x;
