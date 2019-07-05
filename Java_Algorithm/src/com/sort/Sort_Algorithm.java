@@ -1,5 +1,7 @@
 package com.sort;
 import java.util.Arrays;
+
+import sun.tools.jar.resources.jar;
 /**
  * @author JCZhou 
  * <p>Description: </p>  
@@ -261,6 +263,11 @@ public class Sort_Algorithm
 		for(int i = 0; i <= result.length - 1; i++)
 		{
 			System.out.print(result[i]+" ");
+		}
+		
+		for(int i = 0; i <= arr.length - 1; i++)
+		{
+			System.out.print(arr[i]+" ");
 		}
 		//System.out.println(" length: "+arr.length);
     }
