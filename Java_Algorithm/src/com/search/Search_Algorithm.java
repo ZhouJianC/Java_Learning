@@ -1,11 +1,7 @@
-/**
- * <p>Title: Search_Algorithm.java</p>  
- * <p>Description: </p>    
- * @author JCZhou   
- * @date 2019年7月15日  
- * @version 1.0  
- */
 package com.search;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * @author JCZhou 
@@ -22,6 +18,7 @@ public class Search_Algorithm {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+
 
 	}
 
